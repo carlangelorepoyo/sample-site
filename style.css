@@ -1,41 +1,25 @@
-html {
-smooth-scroll: 1;
+@media all and (orientation : landscape) {
+        #container {
+            display: inline-block;
+            width: 56.5%;
+            height: 103.4vw;
+        }
+        #icon {
+            margin: 62.8vw auto 0;
+        }
+    }
+
+    @media all and (orientation : portrait) {
+        #container {
+            height: 100vh;
+            position: absolute;
+            width: 100vw;
+        }
+     #container {
+           background: lime;
 }
-@media all and (orientation: landscape) {
-.top {
-float: right;
-width: 45%;
-height: 100%;
-right: 0;
-top: 0;
-position: sticky;
-margin-top: 60px;
-}
-#home {
-float: left;
-width: 50%;
-margin-top: 60px;
-}
-.header {
-top: 0;
-padding: 5px;
-width: 100%;
-animation: night 20s linear infinite;
-}
-}
-.top {
-background-color: lightblue;
-border: 1px solid blue;
-}
-#home {
-margin: auto;
-animation: night 15s linear infinite;
-}
-body {
-margin: 0;
-}
-@keyframes night {
-0% {background-color: lightblue; color: black;}
-50% {background-color: black; color: white;}
-100% {background-color: lightblue; color: black;}
-}
+
+    .link { 
+         background: gray;
+         color: white;
+  }
